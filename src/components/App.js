@@ -77,7 +77,7 @@ function App() {
         <ErrorWrapper>
           <Loader />
           <ErrorText />
-          <ErrorText>{`Error with request code: ${error}`}</ErrorText>
+          <ErrorText>{`Error fetching users (code ${error})`}</ErrorText>
           <ErrorText>This may be due to rate limiting</ErrorText>
         </ErrorWrapper>
       )}
