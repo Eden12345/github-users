@@ -8,6 +8,8 @@ Please see `create-react-app-README.md` for further instructions if needed (incl
 
 The list API call is made from the top-level `App.js` component, and the individual user data calls are made from `UserCard.js`; see "Potential Improvements" below
 
+Added an infinitely scrolling paginator as alternative to the manual one; scrolling pagination was not requested, but it separates out confusing state management and has a potentially smoother UX
+
 Refactored GitHub user data display into `UserCard.js` for reusability across the different paginator components
 
 # Potential Improvements
@@ -19,7 +21,5 @@ There has to be a better way to parse the header links without an external libra
 It would be better to use TypeScript, and generate types through whatever middleware schemas that are being used for querying so the database and frontend are aligned (or use types exposed by a third-party library)
 
 Add more tests; `Example.test.js` can be run and works as expected, but there isn't testing for real-life use cases in the data parsing or component rendering
-
-An infinitely scrolling paginator; scrolling pagination was not requested, but it separates out confusing state management and has a potentially smoother UX
 
 Handle more errors other than the top level list query
