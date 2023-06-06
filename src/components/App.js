@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 import ManualPaginator from './ManualPaginator';
+// import ScrollingPaginator from './ScrollingPaginator';
 import Loader from './Loader';
 
 const AppWrapper = styled.div`
