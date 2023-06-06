@@ -1,17 +1,9 @@
 import React, { useCallback } from 'react';
-import styled from 'styled-components';
 
 import Loader from './Loader';
 import UserCard from './UserCard';
 
-const UserList = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 32px 32px 0 32px;
-  height: 80vh;
-  overflow: scroll;
-`;
+import { UserList } from '../styles/ScrollingPaginator';
 
 function ManualPaginator({ getGitHubUserList, gitHubUserList }) {
   const onScrollUserList = useCallback((event) => {

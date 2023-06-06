@@ -1,38 +1,8 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import styled from 'styled-components';
 
 import Loader from './Loader';
 
-const UserCardWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid grey;
-  border-radius: 16px;
-  margin: 20px;
-  width: 200px;
-  height: 300px;
-  box-shadow: 6px 6px 20px;
-`;
-
-const UserLink = styled.a`
-  font-size: 20px;
-  color: black;
-  font-weight: bold;
-  margin: 20px 0;
-`;
-
-const UserAvatar = styled.img`
-  height: 60px;
-  width: 60px;
-  border-radius: 30px;
-  margin-bottom: 8px;
-`;
-
-const UserDataString = styled.p`
-  margin: 10px 0;
-  font-size: 14px;
-`;
+import { UserCardWrapper, UserLink, UserAvatar, UserDataString } from '../styles/UserCard';
 
 function UserCard({ gitHubUser }) {
   const [gitHubUserDetails, setGitHubUserDetails] = useState(null);

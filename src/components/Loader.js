@@ -1,22 +1,7 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
 
 import logo from '../assets/logo.svg';
-
-const breatheAnimation = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(4500deg);
-  }
-`;
-
-const SpinningLoader = styled.img`
-  height: 40px;
-  pointer-events: none;
-  animation: ${breatheAnimation} 40s linear infinite;
-`;
+import { SpinningLoader } from '../styles/Loader';
 
 function Loader({ gitHubUser }) {
   return (

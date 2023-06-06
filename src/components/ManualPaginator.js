@@ -1,33 +1,9 @@
 import React, { useCallback, useMemo, useState } from 'react';
-import styled from 'styled-components';
 
 import Loader from './Loader';
 import UserCard from './UserCard';
 
-const UserList = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 32px 32px 0 32px;
-`;
-
-const ButtonWrapper = styled.div`
-  margin-bottom: 40px;
-`;
-
-const Button = styled.button`
-  border: 2px solid grey;
-  background: none;
-  box-shadow: 6px 6px 20px;
-  margin: 32px;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-`;
-
-const PageNumber = styled.span`
-  font-size: 24px;
-`;
+import { UserList, ButtonWrapper, Button, PageNumber } from '../styles/ManualPaginator';
 
 function ManualPaginator({ getGitHubUserList, gitHubUserList }) {
   const [currentPage, setCurrentPage] = useState(0);

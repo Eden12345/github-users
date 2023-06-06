@@ -1,35 +1,10 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import styled from 'styled-components';
 
 import ManualPaginator from './ManualPaginator';
 // import ScrollingPaginator from './ScrollingPaginator';
 import Loader from './Loader';
 
-const AppWrapper = styled.div`
-  text-align: center;
-`;
-
-const AppHeader = styled.header`
-  background-color: #282c34;
-  min-height: 20vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  color: white;
-`;
-
-const ErrorWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 32px;
-`;
-
-const ErrorText = styled.p`
-  margin: 10px;
-`;
+import { AppWrapper, AppHeader, ErrorWrapper, ErrorText } from '../styles/App';
 
 function App() {
   const [gitHubUserList, setGitHubUserList] = useState([]);
