@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 
 import ManualPaginator from './ManualPaginator';
-// import ScrollingPaginator from './ScrollingPaginator';
+import ScrollingPaginator from './ScrollingPaginator';
 import Loader from './Loader';
 
 import { AppWrapper, AppHeader, ErrorWrapper, ErrorText } from '../styles/App';
@@ -36,7 +36,7 @@ function App() {
 
   useEffect(() => {
     getGitHubUserList();
-  }, [])
+  }, []);
 
   return (
     <AppWrapper>

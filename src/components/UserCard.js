@@ -25,7 +25,7 @@ function UserCard({ gitHubUser }) {
 
   useEffect(() => {
     getGitHubUserList();
-  }, [getGitHubUserList])
+  }, [getGitHubUserList]);
 
   return (
     <UserCardWrapper>
