@@ -14,7 +14,7 @@ Refactored GitHub user data display into `UserCard.js` for reusability across th
 
 # Potential Improvements
 
-Making an individual call for every single user to get simple data strings like their name and location feels quite heavy — is there a way to specify that you would like fuller user data from the list endpoint?
+Making an individual call for every single user to get simple data strings like their name and location feels quite heavy — is there a way to specify that you would like fuller user data from the list endpoint? User details could also be saved in a hashmap (with login names as keys since they're unique) and check for the existence of user details before making the secondary individual requests, but that of course adds code complexity
 
 There has to be a better way to parse the header links without an external library; using the current Regex implementation creates unnecessary complexity in both `App.js` and `ManualPaginator.js`
 
